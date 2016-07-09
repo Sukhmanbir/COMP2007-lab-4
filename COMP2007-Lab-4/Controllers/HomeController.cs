@@ -8,18 +8,23 @@ namespace COMP2007_Lab_4.Controllers
 {
     public class HomeController : Controller
     {
+        //public string SubTitle;
+
+        // GET: /Home/Index or /
         public ActionResult Index()
         {
             return View();
         }
 
+        // GET: /Home/About
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            //this.SubTitle = "Hello World!";
 
             return View();
         }
 
+        // GET: /Home/Contact
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
